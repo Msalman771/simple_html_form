@@ -1,7 +1,10 @@
 form{
+   background-image:url("pic.jpg");
+        background-repeat:no-repeat;
+        background-size:cover;
     text-align:center;
     height:100vh;
-    background-image:url("pic.jpg");
+
     background-size:cover;
 }
 dt {
@@ -13,6 +16,9 @@ table {
     width: 100%;
     border-left: 2px solid red;
     border-right: 2px dotted red;
+    /* OUT LINE CONCEPT IS USED HERE */
+    outline-offset: 4px;
+    outline: 2px solid black;
 }
 input{
     border: 3px solid black;
@@ -20,4 +26,14 @@ input{
 td{
     border: 1px solid black;
     text-align:center;
+}
+h1{
+    text-shadow: 2px 2px 5px red;
+    text-decoration:underline;
+    letter-spacing: 5px;
+    text-transform:uppercase;
+}
+dd{
+    text-transform:capitalize;
+    text-shadow: 2px 2px 5px red;
 }
