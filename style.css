@@ -3,3 +3,13 @@ form{
     background-image:url("pic.jpg");
     background-size:cover;
 }
+dt {
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+}
+table {
+    border: 1px solid red;
+    width: 100%;
+    border-left: 2px solid red;
+    border-right: 2px dotted red;
+}
