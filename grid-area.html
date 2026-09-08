@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: #2196F3;
+           grid-template-rows:100px 1fr 100px;
+            border: 1px solid black;         
+           grid-template-areas:
+                "header header"
+                "main article"
+                "footer footer";
+                gap:2px;
+                height: 100vh;
+        }
+        .item{
+            background-color: rgba(159, 45, 45, 0.8);
+            border: 1px solid black;
+           
+        }
+        .item1{
+            text-align: center;
+            align-content: center;
+            grid-area: header;
+            background-color: rgba(19, 161, 55, 0.8);
+        }
+        .item2{
+            grid-area: main;
+            background-color: rgba(62, 204, 98, 0.8);
+            align-content: center;
+            text-align: center;
+
+        }
+        .item3{
+            grid-area: article;
+            background-color: rgba(133, 149, 41, 0.8);
+            align-content: center;
+            text-align: center;
+        }
+        .item4{
+            grid-area: footer;
+            background-color: rgba(26, 197, 68, 0.8);
+            align-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Header section</div>
+        <div class="item item2">Main content</div>
+        <div class="item item3">Article content</div>
+        <div class="item item4">Footer section</div>
+    </div>
+</body>
+</html>
