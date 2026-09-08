@@ -41,6 +41,13 @@ dd{
     font-weight:bold;
     font-size:30px;
 }
+ul{
+    list-style-type:circle;
+   
+}
+ol{
+    list-style-type:upper-roman;
+}
 a:link, a:visited {
   background-color: white;
   color: black;
