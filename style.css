@@ -17,6 +17,7 @@ table {
     /* OUT LINE CONCEPT IS USED HERE */
     outline-offset: 4px;
     outline: 2px solid black;
+    height: 150px;
 }
 input{
     border: 3px solid black;
@@ -24,6 +25,16 @@ input{
 td{
     border: 1px solid black;
     text-align:center;
+    vertical-align: top;;
+}
+th:hover{
+    background-color:rgb(0, 0, 0);
+    color:whitesmoke;
+}
+td:hover{
+background-color:rgb(0150, 0, 0);
+    color:whitesmoke;
+
 }
 h1{
     text-shadow: 2px 2px 5px red;
@@ -37,13 +48,19 @@ dd{
 }
 .font{
     font-family: "Times New Roman", Times, serif;
-    text-wrap:nowrap;
+    text-wrap:wrap;
     font-weight:bold;
     font-size:30px;
 }
 ul{
     list-style-type:circle;
-   
+    background-color:salmon;
+   padding:20px;
+}
+ul li{
+    background-color:mistyrose;
+    padding:10px;
+    margin: 2px;
 }
 ol{
     list-style-type:upper-roman;
