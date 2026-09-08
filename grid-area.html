@@ -25,36 +25,51 @@
            
         }
         .item1{
-            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           gap: 30px;
             text-align: center;
             align-content: center;
             grid-area: header;
-            background-color: rgba(19, 161, 55, 0.8);
+            background-color: #1E3A5F;
+          
+           
+        }
+        .item1 a{
+            text-decoration: none;
+              color: white;
         }
         .item2{
             grid-area: main;
-            background-color: rgba(62, 204, 98, 0.8);
+            background-color: #FFFFFF;
             align-content: center;
             text-align: center;
 
         }
         .item3{
             grid-area: article;
-            background-color: rgba(133, 149, 41, 0.8);
+            background-color: #E8F1F8;
             align-content: center;
             text-align: center;
         }
         .item4{
             grid-area: footer;
-            background-color: rgba(26, 197, 68, 0.8);
+            background-color: #172B4D;
             align-content: center;
+            color:white;
             text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item item1">Header section</div>
+        <div class="item item1">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+              <a href="#">Home</a>
+            <a href="#">About</a>
+        </div>
         <div class="item item2">Main content</div>
         <div class="item item3">Article content</div>
         <div class="item item4">Footer section</div>

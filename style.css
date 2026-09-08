@@ -34,8 +34,8 @@ table {
     outline: 2px solid black;
     height: 150px;
 }
-input{
-    border: 3px solid black;
+.table_container {
+    overflow-x: auto;
 }
 
 td{
