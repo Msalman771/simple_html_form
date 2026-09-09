@@ -26,13 +26,14 @@
         }
         .item1{
             display: flex;
-            justify-content: center;
+            justify-content:flex-start;
             align-items: center;
            gap: 30px;
             text-align: center;
             align-content: center;
             grid-area: header;
             background-color: #1E3A5F;
+            padding-left:10px;
           
            
         }
@@ -40,11 +41,18 @@
             text-decoration: none;
               color: white;
         }
+        .item1 form {
+    margin-left: auto;
+    padding: 10px;
+}
+       
         .item2{
             grid-area: main;
             background-color: #FFFFFF;
             align-content: center;
             text-align: center;
+            overflow:auto;
+            max-width:max-content;
 
         }
         .item3{
@@ -52,6 +60,8 @@
             background-color: #E8F1F8;
             align-content: center;
             text-align: center;
+            max-width: max-content;
+            overflow: auto;
         }
         .item4{
             grid-area: footer;
@@ -69,9 +79,13 @@
             <a href="#">About</a>
               <a href="#">Home</a>
             <a href="#">About</a>
+             <form>
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
         </div>
-        <div class="item item2">Main content</div>
-        <div class="item item3">Article content</div>
+        <div class="item item2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sint aliquam, modi consectetur aliquid recusandae! Est, nisi sunt impedit nobis minus officia quis explicabo dignissimos assumenda soluta nesciunt reiciendis expedita?</div>
+        <div class="item item3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio iure temporibus, pariatur rerum animi et quisquam fuga eius ad eos? Recusandae ea veritatis cum error dicta deserunt nisi dolorum facere?</div>
         <div class="item item4">Footer section</div>
     </div>
 </body>
