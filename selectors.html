@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            margin: 2px;
+        }
+        /* space selector */
+        div p{
+            background-color: bisque;
+        }
+
+        /* child selector */
+        .child >p{
+            background-color: rgb(210, 210, 80);
+        }
+        /* sibling combinator  */
+        div + p{
+            background-color: yellowgreen;
+        }
+
+        /* subsequent-sibling combinator  */
+        div  p{
+            background-color: rgb(13, 175, 86);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>style through space selector</p>
+        <div>
+        <p>this text is inside another div but the space selector target the all p element with in div selector</p>
+        <p>style through space selector</p>
+        </div>
+    </div>
+
+     <div class="child">
+        <p>style through child selector</p>
+        <p>this element is also child selector </p>
+        <div>
+        <p>now this text inside the child div but this is color through space selector b/c child selector target the direct selector and this is wrap inside another div</p>
+        </div>
+    </div>   
+    <p>
+        sibling combinator + that is  directly target the elemtor after the div
+    </p>
+    <p>this one is also out side of the div but on number two thats why its not targeted through sibling combinatior
+        this is target by sub sibling combinator
+    </p>
+</body>
+</html>
