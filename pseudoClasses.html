@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1{
+            display: none;
+            background-color: rgb(231, 220, 61);
+            
+            padding: 20px;
+            text-align: center;
+        }
+        div:hover .p1{
+            display: block;
+            color: rgb(191, 14, 14);
+        }
+
+        div:hover .p1::first-letter{
+            color: black;
+            font-size: 200%;
+        }
+
+        p:first-child{
+            color: rgb(103, 163, 12);
+        }
+
+        p em:first-child{
+            color: red;
+        }
+        h2::before{
+            content:"\2605 ";
+            color: gold;;
+        }
+        h2::after{
+            content:"\2605 ";
+            color: gold;
+        }
+        .div1::first-letter{
+            font-size: 200%;
+            color:#04AA6D;
+float:left;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        hover over the div element to show you surparize
+        <p class="p1">welcome Sir </p>
+    </div>
+    <h2>first child</h2>
+
+    <div>
+        <p>this one is first child </p>
+        <p>this one is 2nd number</p>
+        <div> <p>this one is first child </p>
+        <p>this one is 2nd number</p></div>
+    </div>
+    <div>
+         <p>this one is first child </p>
+        <p>this one is 2nd number</p>
+    </div>
+    <p>Style the first em element in all p elements:</p>
+
+<p>I am a <em>strong</em> person. I am a <em>strong</em> person.</p>
+<p>I am a <em>strong</em> person. I am a <em>strong</em> person.</p>
+</body>
+</html>
